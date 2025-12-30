@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <meta name="description" content="Dra. Ana Silva - Odontologia Estética e Humanizada. Transforme seu sorriso com tratamentos modernos, Invisalign, lentes de contato e muito mais. Agende sua avaliação.">
+    <meta name="keywords" content="Dentista, Odontologia, Clareamento, Implantes, Lentes de Contato, Dentista São Paulo">
+    <meta name="author" content="Redesigner PPM">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dra. Ana Silva - Odontologia Especializada">
+    <meta property="og:description" content="Sorrisos que transformam vidas. Tecnologia de ponta e atendimento humanizado.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1000&auto=format&fit=crop">
+
+    <title>Dra. Ana Silva | Odontologia Estética e Humanizada</title>
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦷</text></svg>">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        },
+                        accent: '#14b8a6',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Consultório Dra. Ana Silva",
+      "image": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95",
+      "@id": "",
+      "url": "https://www.draanasilva.com.br",
+      "telephone": "+5511999999999",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Paulista, 1000 - Sala 42",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "postalCode": "01310-100",
+        "addressCountry": "BR"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    }
+    </script>
+
+    <style>
+        body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+        
+        html { font-size: 16px; }
+        @media (max-width: 640px) { html { font-size: 14px; } }
+
+        .hero-bg {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url('https://images.unsplash.com/photo-1609840114035-1c29046a80f1?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .pulse-animation {
+            animation: pulse-green 2s infinite;
+        }
+        @keyframes pulse-green {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        img { object-fit: cover; }
+    </style>
+</head>
+<body class="text-gray-700 antialiased relative">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-brand-900 tracking-tighter" aria-label="Dra. Ana Silva Home">
+                <i class="fa-solid fa-tooth text-brand-500 mr-2"></i>Dra. Ana Silva
+            </a>
+            
+            <div class="hidden md:flex space-x-8 items-center font-medium text-sm text-gray-600">
+                <a href="#home" class="hover:text-brand-500 transition">Home</a>
+                <a href="#sobre" class="hover:text-brand-500 transition">Sobre</a>
+                <a href="#tratamentos" class="hover:text-brand-500 transition">Tratamentos</a>
+                <a href="#depoimentos" class="hover:text-brand-500 transition">Depoimentos</a>
+                <a href="#contato" class="px-5 py-2.5 bg-brand-600 text-white rounded-full hover:bg-brand-700 transition shadow-lg hover:shadow-brand-500/30" aria-label="Agendar Consulta">
+                    Agendar Consulta
+                </a>
+            </div>
+
+            <button class="md:hidden text-gray-600 focus:outline-none" onclick="toggleMenu()" aria-label="Abrir menu de navegação">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 p-4 absolute w-full shadow-xl">
+            <div class="flex flex-col space-y-4 text-center">
+                <a href="#home" onclick="toggleMenu()" class="block py-2 text-gray-700">Início</a>
+                <a href="#tratamentos" onclick="toggleMenu()" class="block py-2 text-gray-700">Tratamentos</a>
+                <a href="#contato" onclick="toggleMenu()" class="block py-3 bg-brand-600 text-white rounded-lg">Agendar Agora</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="text-center md:text-left animate-fade-in-up">
+                <span class="inline-block py-1 px-3 rounded-full bg-brand-100 text-brand-600 text-xs font-bold uppercase tracking-wider mb-4">
+                    Odontologia Humanizada
+                </span>
+                <h1 class="text-4xl md:text-6xl font-heading font-bold text-gray-900 leading-tight mb-6">
+                    Seu sorriso é a nossa <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-accent">melhor assinatura.</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                    Tecnologia de ponta e cuidado acolhedor. Recupere sua autoestima com tratamentos indolores e resultados naturais.
+                </p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+                    <a href="https://wa.me/5511999999999" class="px-8 py-4 bg-brand-600 text-white font-semibold rounded-lg shadow-lg hover:bg-brand-700 hover:scale-105 transition transform flex items-center justify-center gap-2" aria-label="Agendar via WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i> Agendar Avaliação
+                    </a>
+                    <a href="#tratamentos" class="px-8 py-4 bg-white text-gray-700 font-semibold rounded-lg shadow border border-gray-200 hover:bg-gray-50 transition flex items-center justify-center">
+                        Conhecer Tratamentos
+                    </a>
+                </div>
+                
+                <div class="mt-10 flex items-center justify-center md:justify-start gap-6 text-gray-400 text-sm font-medium">
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-shield-halved text-brand-500"></i> Alta Tecnologia</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-star text-brand-500"></i> +2.000 Sorrisos</div>
+                </div>
+            </div>
+            
+            <div class="hidden md:block relative">
+                <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=1000&auto=format&fit=crop" alt="Dra Ana Silva no consultório atendendo sorridente" class="rounded-2xl shadow-2xl relative z-10 w-full h-[600px] object-cover">
+                <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-brand-100 rounded-full blur-3xl -z-0"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-2xl bg-gray-50 hover:bg-brand-50 transition duration-300 border border-transparent hover:border-brand-200">
+                    <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Sem Dor</h3>
+                    <p class="text-gray-500">Anestesia computadorizada e técnicas minimamente invasivas para seu total conforto.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-gray-50 hover:bg-brand-50 transition duration-300 border border-transparent hover:border-brand-200">
+                    <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-regular fa-calendar-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Horários Flexíveis</h3>
+                    <p class="text-gray-500">Atendimento estendido e aos sábados para se adequar à sua rotina corrida.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-gray-50 hover:bg-brand-50 transition duration-300 border border-transparent hover:border-brand-200">
+                    <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Materiais Premium</h3>
+                    <p class="text-gray-500">Trabalhamos apenas com as melhores marcas mundiais de implantes e resinas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tratamentos" class="py-20 bg-brand-50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-4">Nossos Tratamentos</h2>
+                <p class="text-gray-600">Soluções completas para saúde e estética do seu sorriso em um só lugar.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition overflow-hidden group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?auto=format&fit=crop&q=80&w=500" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Lentes de Contato de porcelana antes e depois">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-brand-900">Lentes de Contato</h3>
+                        <p class="text-gray-500 text-sm mb-4">Transforme o formato e a cor dos seus dentes com facetas de porcelana ultra-finas.</p>
+                        <a href="#contato" class="text-brand-600 font-semibold text-sm hover:underline" aria-label="Saber mais sobre Lentes de Contato">Saiba mais →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition overflow-hidden group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&q=80&w=500" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Procedimento de Implantes Dentários">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-brand-900">Implantes Dentários</h3>
+                        <p class="text-gray-500 text-sm mb-4">Recupere a função mastigatória e a estética com implantes de titânio de carga rápida.</p>
+                        <a href="#contato" class="text-brand-600 font-semibold text-sm hover:underline" aria-label="Saber mais sobre Implantes">Saiba mais →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition overflow-hidden group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://plus.unsplash.com/premium_photo-1661775756810-82dbd209fc95?auto=format&fit=crop&q=80&w=500" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Aparelho Ortodôntico Invisalign Invisível">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-brand-900">Ortodontia Invisível</h3>
+                        <p class="text-gray-500 text-sm mb-4">Alinhadores transparentes (Invisalign) que corrigem seus dentes sem metal aparente.</p>
+                        <a href="#contato" class="text-brand-600 font-semibold text-sm hover:underline" aria-label="Saber mais sobre Ortodontia">Saiba mais →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=1000&auto=format&fit=crop" alt="Dra Ana Silva sorrindo" class="rounded-lg shadow-2xl w-full max-w-md mx-auto h-[500px] object-cover">
+            </div>
+            <div class="md:w-1/2 text-center md:text-left">
+                <h4 class="text-brand-500 font-bold uppercase tracking-wide mb-2">Sobre a Especialista</h4>
+                <h2 class="text-3xl font-heading font-bold text-gray-900 mb-6">Dra. Ana Silva</h2>
+                <p class="text-gray-600 mb-4 text-lg">
+                    "Acredito que a odontologia vai muito além dos dentes. É sobre devolver a confiança para sorrir sem medo."
+                </p>
+                <ul class="space-y-3 text-gray-600 mb-8 inline-block text-left">
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Especialista em Ortodontia pela USP</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Membro da Sociedade Brasileira de Odontologia Estética</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Mais de 15 anos de experiência clínica</li>
+                </ul>
+                <div class="block">
+                    <img src="https://fakeimg.pl/200x80/ffffff/cccccc?text=Assinatura" alt="Assinatura da Dra. Ana Silva" class="opacity-50 mx-auto md:mx-0">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="py-20 bg-brand-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-brand-800 rounded-full blur-3xl opacity-50"></div>
+        <div class="container mx-auto px-4 md:px-6 relative z-10">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-heading font-bold">O que nossos pacientes dizem</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-brand-800 p-8 rounded-2xl border border-brand-700">
+                    <div class="flex text-yellow-400 mb-4 text-sm" aria-label="Avaliação 5 estrelas">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="italic text-gray-300 mb-6">"Morria de medo de dentista, mas a Dra. Ana mudou isso. Fiz implantes e não senti dor alguma. Recomendo de olhos fechados!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center text-gray-800 font-bold italic">R</div>
+                        <div>
+                            <p class="font-bold">Ricardo M.</p>
+                            <p class="text-xs text-gray-400">Paciente de Implante</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-brand-800 p-8 rounded-2xl border border-brand-700 md:scale-105 shadow-2xl">
+                    <div class="flex text-yellow-400 mb-4 text-sm" aria-label="Avaliação 5 estrelas">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="italic text-gray-300 mb-6">"Fiz minhas lentes de contato e o resultado ficou super natural. O atendimento da equipe é impecável do início ao fim."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center text-gray-800 font-bold italic">J</div>
+                        <div>
+                            <p class="font-bold">Júlia S.</p>
+                            <p class="text-xs text-gray-400">Estética Dental</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-brand-800 p-8 rounded-2xl border border-brand-700">
+                    <div class="flex text-yellow-400 mb-4 text-sm" aria-label="Avaliação 5 estrelas">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="italic text-gray-300 mb-6">"Ambiente limpo, moderno e pontualidade. Finalmente encontrei uma dentista de confiança em São Paulo."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center text-gray-800 font-bold italic">M</div>
+                        <div>
+                            <p class="font-bold">Marcos P.</p>
+                            <p class="text-xs text-gray-400">Clínico Geral</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="bg-brand-50 rounded-3xl overflow-hidden shadow-sm flex flex-col md:flex-row">
+                <div class="md:w-1/2 p-10 md:p-16">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900">Agende sua visita</h2>
+                    <p class="text-gray-600 mb-8">Entre em contato pelo WhatsApp.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-brand-500 shadow-sm shrink-0">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 font-semibold uppercase">WhatsApp</p>
+                                <p class="text-lg font-bold text-gray-900">(11) 99999-9999</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-brand-500 shadow-sm shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 font-semibold uppercase">Endereço</p>
+                                <p class="text-gray-900">Av. Paulista, 1000, Sala 42 - São Paulo, SP</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/5511999999999" target="_blank" class="mt-10 inline-block w-full text-center bg-green-500 text-white font-bold py-4 rounded-lg hover:bg-green-600 transition shadow-lg pulse-animation" aria-label="Enviar mensagem no WhatsApp agora">
+                        <i class="fa-brands fa-whatsapp mr-2"></i> Chamar no WhatsApp
+                    </a>
+                </div>
+                <div class="md:w-1/2 bg-gray-200 min-h-[400px]">
+                    <iframe title="Mapa de localização do consultório" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.19747576574!2d-46.6543902!3d-23.5613497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0 text-center md:text-left">
+                    <span class="text-2xl font-bold text-white tracking-tighter">Dra. Ana Silva</span>
+                    <p class="text-sm mt-2">CRO/SP: 12345</p>
+                </div>
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="#" class="hover:text-white transition" aria-label="Visite nosso Instagram"><i class="fa-brands fa-instagram text-2xl"></i></a>
+                    <a href="#" class="hover:text-white transition" aria-label="Visite nosso Facebook"><i class="fa-brands fa-facebook text-2xl"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between text-sm text-center md:text-left">
+                <p>© 2026 Consultório Dra. Ana Silva. Todos os direitos reservados. - Desenvolvido por <a href="https://redesigner.com.br/redesinger" class="text-brand-600 underline">Redesigner PPM</a></p>
+                <div class="flex space-x-4 mt-4 md:mt-0 justify-center">
+                    <a href="termos.html" class="hover:text-white transition underline">Termos de Uso</a>
+                    <a href="privacidade.html" class="hover:text-white transition underline">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5511999999999" target="_blank" class="fixed bottom-6 right-6 z-40 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition hover:scale-110 pulse-animation" aria-label="Fale conosco no WhatsApp">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <button id="scrollTopBtn" onclick="scrollToTop()" class="fixed bottom-24 right-6 z-30 bg-gray-800 text-white w-10 h-10 rounded-full items-center justify-center shadow-lg hover:bg-gray-700 transition hidden opacity-70 hover:opacity-100" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <div id="lgpdBanner" class="fixed bottom-0 w-full bg-white border-t border-gray-200 shadow-[0_-4px_15px_rgba(0,0,0,0.1)] p-6 z-[9999] hidden transform transition-transform duration-500 translate-y-full">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-4 text-center md:text-left">
+                <div class="hidden md:flex w-12 h-12 bg-brand-50 text-brand-500 rounded-full items-center justify-center text-xl shrink-0">
+                    <i class="fa-solid fa-cookie-bite"></i>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    Nós utilizamos cookies para personalizar sua experiência. Ao continuar navegando, você concorda com nossa 
+                    <a href="privacidade.html" class="text-brand-600 font-bold underline hover:text-brand-700">Política de Privacidade</a> e nossos 
+                    <a href="termos.html" class="text-brand-600 font-bold underline hover:text-brand-700">Termos de Uso</a>.
+                </p>
+            </div>
+            <div class="flex gap-3 w-full md:w-auto">
+                <button onclick="acceptLGPD()" class="flex-1 md:flex-none px-8 py-3 bg-brand-600 text-white text-sm font-bold rounded-lg hover:bg-brand-700 transition shadow-md">Aceitar Cookies</button>
+                <button onclick="closeLGPD()" class="px-6 py-3 bg-gray-100 text-gray-700 text-sm font-bold rounded-lg hover:bg-gray-200 transition">Recusar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        const scrollBtn = document.getElementById("scrollTopBtn");
+        const navbar = document.getElementById("navbar");
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                scrollBtn.classList.remove("hidden");
+                scrollBtn.classList.add("flex");
+            } else {
+                scrollBtn.classList.add("hidden");
+                scrollBtn.classList.remove("flex");
+            }
+            if (window.scrollY > 10) {
+                navbar.classList.add("shadow-md");
+            } else {
+                navbar.classList.remove("shadow-md");
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // LGPD LOGIC
+        const lgpdBanner = document.getElementById('lgpdBanner');
+        window.addEventListener('load', () => {
+            if (!localStorage.getItem('lgpdAccepted')) {
+                lgpdBanner.classList.remove('hidden');
+                setTimeout(() => {
+                    lgpdBanner.classList.remove('translate-y-full');
+                }, 100);
+            }
+        });
+
+        function acceptLGPD() {
+            localStorage.setItem('lgpdAccepted', 'true');
+            closeLGPD();
+        }
+
+        function closeLGPD() {
+            lgpdBanner.classList.add('translate-y-full');
+            setTimeout(() => {
+                lgpdBanner.classList.add('hidden');
+            }, 500);
+        }
+    </script>
+</body>
+</html>
